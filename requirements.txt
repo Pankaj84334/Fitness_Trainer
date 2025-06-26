@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+fastmcp
+langchain
+langchain-mcp-adapters
+mcp
+langgraph
+langchain-groq
+sqlalchemy
+cryptography
+passlib
+bcrypt
+python-jose
+pydantic
+langgraph-swarm
