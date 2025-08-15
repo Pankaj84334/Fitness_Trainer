@@ -2,7 +2,9 @@ from langchain_core.tools import tool
 import requests
 from langgraph_swarm import create_handoff_tool
 from langchain_groq import ChatGroq
-groq = ChatGroq(model="qwen-qwq-32b", temperature=0.0)
+from dotenv import load_dotenv
+load_dotenv()
+groq = ChatGroq(model="qwen/qwen3-32b", temperature=0.0)
 from langgraph.prebuilt import create_react_agent
 # -------------------------------calculator_tool---------------------------------
 @tool

@@ -10,7 +10,7 @@ from  tool_wrappers import (
 ) 
 load_dotenv()
 async def main():
-    query = queries[2]
+    query = queries[7]
     messages = [{"role": "user", "content": query}]
     swarm = create_swarm(
         agents=[calculator_agent, weather_agent, general_agent, health_check_agent],

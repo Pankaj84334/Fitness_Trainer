@@ -5,9 +5,7 @@ from pathlib import Path
 import os
 from datetime import datetime, timedelta
 
-env_path = Path(__file__).parent / ".env"
-load_dotenv(dotenv_path=env_path)
-
+load_dotenv()
 api_key = os.getenv("OPENWEATHER_API_KEY")
 
 app = FastAPI()
